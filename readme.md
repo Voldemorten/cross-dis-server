@@ -1,4 +1,5 @@
-# This is a simple webserver by group C1 in the course Cross Disciplinary Teamwork (fall 2020) at the IT University of Copenhagen
+# Nodejs, Express server connected to MySQL
+This is a simple webserver by group C1 in the course Cross Disciplinary Teamwork (fall 2020) at the IT University of Copenhagen
 
 ## Requirements
 Node and NPM
