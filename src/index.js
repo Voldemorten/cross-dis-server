@@ -30,6 +30,7 @@ app.get('/arduino', (req, res) => {
 });
 
 app.post('/arduino', (req, res) => {
+  console.log("received POST request!");
   let q = req.query;
   let arduino_time = q.time;
   let arduino_distance = q.dist;
