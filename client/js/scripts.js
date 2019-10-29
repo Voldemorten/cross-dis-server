@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function(){
+const SERVER_IP = "localhost";
 
+document.addEventListener("DOMContentLoaded", function(){
     window.setInterval(function(){
         get_data((input) => {
             let tbody = $("#data tbody")
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function get_data(cb) {
     $.ajax({
-        url:"http://localhost:3000/arduino",
+        url:"http://"+SERVER_IP+":3000/arduino",
         method:"GET",
         dataType:"json",
         contentType:"application/json",

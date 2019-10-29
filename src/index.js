@@ -22,6 +22,7 @@ app.get('', (req, res) => {
 })
 
 app.get('/arduino', (req, res) => {
+  console.log("received GET request!");
   connection.query('SELECT * FROM arduino_data', function (err, rows, fields) {
     if (err) throw err
     return res.send(rows);
